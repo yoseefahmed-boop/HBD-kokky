@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>الهدية السرية</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="login-page">
+    <main class="pin-screen">
+      <div class="pin-card">
+        <img
+          src="images/password-image.jpg.jpeg"
+          alt="صورة الهدية"
+        />
+
+        <p class="eyebrow">هدية سرية</p>
+
+        <h1>احلى هديه لست البنات😘</h1>
+
+        <p>باسورد من8 ارقام قريبين لقلبي😉💖</p>
+
+        <input
+          id="pinInput"
+          type="password"
+          inputmode="numeric"
+          maxlength="8"
+          placeholder="••••••••"
+        />
+
+        <button
+          class="button primary"
+          id="pinButton"
+          type="button"
+        >
+          افتحي الهدية ♡
+        </button>
+
+        <p
+          class="pin-error"
+          id="pinError"
+        ></p>
+      </div>
+    </main>
+
+    <script>
+      const correctPin ="16102006" ;
+    const pinInput = document.getElementById("pinInput");
+      const pinButton = document.getElementById("pinButton");
+      const pinError = document.getElementById("pinError");
+
+      pinInput.addEventListener("input", () => {
+        pinInput.value = pinInput.value
+          .replace(/\D/g, "")
+          .slice(0, 8);
+      });
+
+      pinButton.addEventListener("click", () => {
+        const enteredPin = pinInput.value;
+
+        if (!/^\d{8}$/.test(enteredPin)) {
+          pinError.textContent =
+            "اكتبي 8 أرقام بالضبط.";
+          return;
+        }
+
+        if (enteredPin === correctPin) {
+          window.location.href = "home.html";
+        } else {
+          pinError.textContent =
+            "الـ PIN غلط، جربي تاني يا روحي ♡";
+
+          pinInput.value = "";
+          pinInput.focus();
+        }
+      });
+
+      pinInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          pinButton.click();
+        }
+      });
+    </script>
+  </body>
+</html>

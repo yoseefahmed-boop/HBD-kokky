@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ذكرياتنا | هدية عيد الميلاد</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header container">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">♡</span>
+        <span>ليكي إنتِ</span>
+      </a>
+      <nav>
+        <a href="home.html">اول حاجه كدااا</a>
+        <a class="active" href="memories.html">شوية صور يمزتي💋</a>
+        <a href="letter.html">المسدج بقاا</a>
+      </nav>
+    </header>
+
+    <main class="inner-page container">
+      <div class="page-heading reveal">
+        <p class="eyebrow">بحب اشوف صورك وكل مرة بستغرب جمالك💖</p>
+        <h1>
+          كل صورة ليها<br />
+          <em>ذكرى عندي💋💖</em>
+        </h1>
+        <p>
+         حطيت هنا صور انت فيها زي القمر وصور لينا سوا كل سنه وانت بداية كل حاجه حلوة فحياتي💖
+        </p>
+      </div>
+
+      <div class="photo-grid">
+        <figure class="memory-photo tall reveal">
+          <img
+            src="images/photo-1.jpg.jpeg"
+            alt="صورتنا الأولى"
+            onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"
+          />
+          <figcaption><span>01</span>كل </figcaption>
+        </figure>
+
+        <figure class="memory-photo reveal delay-one">
+          <img
+            src="images/photo-2.jpg.jpeg"
+            alt=" "
+            onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"
+          />
+          <figcaption><span>02</span> سنه </figcaption>
+        </figure>
+
+        <figure class="memory-photo reveal delay-two">
+          <img
+            src="images/photo-3.jpg.jpeg"
+            alt="لحظة مميزة"
+            onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"
+          />
+          <figcaption><span>03</span>  وانت</figcaption>
+        </figure>
+
+        <figure class="memory-photo reveal">
+          <img
+            src="images/photo-4.jpg.jpeg"
+            alt="ذكرى رابعة"
+            onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"
+          />
+          <figcaption><span>04</span> كل </figcaption>
+        </figure>
+
+        <figure class="memory-photo reveal delay-one">
+          <img
+            src="images/photo-5.jpg.jpeg"
+            alt="ذكرى خامسة"
+            onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"
+          />
+          <figcaption><span>05</span> حاجه حلوه</figcaption>
+        </figure>
+
+        <figure class="memory-photo reveal delay-two">
+          <img
+            src="images/photo-6.jpg.jpeg"
+            alt="ذكرى سادسة"
+            onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"
+          />
+          <figcaption><span>06</span> فحياتي</figcaption>
+        </figure>
+      </div>
+
+      <section class="qr-section reveal">
+        <div>
+          <p class="eyebrow">صندوق صغير</p>
+          <h2>امسحي الكود وادعيلي 😉</h2>
+          <p>
+           بجد بحبببببك
+          </p>
+        </div>
+        <div class="qr-box">
+          <img
+            src="assets/qr-code.png.jpeg"
+            alt="QR code"
+            onerror="this.style.display='none'; this.parentElement.classList.add('qr-placeholder')"
+          />
+          <span>QR<br />CODE</span>
+        </div>
+      </section>
+
+      <div class="page-next">
+        <a class="button primary" href="letter.html">
+          الي بعدو يمزتي💋<span>←</span>
+        </a>
+      </div>
+    </main>
+
+    <footer class="site-footer container">
+      <span>حبيبة قلب بابا </span>
+      <span>💖</span>
+    </footer>
+
+    <audio id="birthdayAudio" loop>
+      <source src="assets/birthday-song.mp3.mpeg" type="audio/mpeg" />
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
